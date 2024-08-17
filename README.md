@@ -47,6 +47,7 @@ pip install -r requirements.txt
 Выполнить миграции:
 
 ```
+cd tlt_pro
 python3 manage.py makemigrations
 python3 manage.py migrate
 ```
@@ -66,14 +67,14 @@ python3 manage.py runserver
 
 Значения Суперюзера для проверки админ-зоны:
 ```
+cd tlt_pro
 python3 manage.py runserver createsuperuser
 ```
 Указать данные, например:
 - Электронная почта: admin@admin.com
 - Username: admin_username
 - Пароль: admin_password 
-- Имя пользователя: admin 
-- Фамилия: admin
+- Имя пользователя: admin
 
 Технологии
 ```
