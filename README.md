@@ -5,6 +5,51 @@ c настроенными моделями и админ-зоной.
 
 tlt_pro -> products -> models.py
 
+## Как запустить проект
+Клонировать репозиторий и перейти в него в командной строке:
+
+```
+git@github.com:VitaliiCheremisov/testing_task_tlt_pro.git
+```
+
+```
+cd tlt_pro
+```
+
+Cоздать и активировать виртуальное окружение:
+
+```
+python3 -m venv env
+```
+
+* Если у вас Linux/macOS
+
+    ```
+    source env/bin/activate
+    ```
+
+* Если у вас windows
+
+    ```
+    source env/scripts/activate
+    ```
+
+```
+python3 -m pip install --upgrade pip
+```
+
+Установить зависимости из файла requirements.txt:
+
+```
+pip install -r requirements.txt
+```
+
+Выполнить миграции:
+
+```
+python3 manage.py makemigrations
+python3 manage.py migrate
+```
 Для запуска проекта локально c БД sqlite3:
 1) В корневом каталоге создать .env файл
 2) Описать переменные:
