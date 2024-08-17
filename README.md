@@ -65,7 +65,10 @@ python3 manage.py runserver
 ```
 
 Значения Суперюзера для проверки админ-зоны:
-
+```
+python3 manage.py runserver createsuperuser
+```
+Указать данные, например:
 - Электронная почта: admin@admin.com
 - Username: admin_username
 - Пароль: admin_password 
